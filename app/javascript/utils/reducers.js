@@ -1,3 +1,5 @@
+import articles, { REDUCER_KEY as ARTICLE_KEY } from 'ducks/articles'
+
 export default {
-  x: function(state={}, action) {return state}
+  [ARTICLE_KEY]: articles,
 }

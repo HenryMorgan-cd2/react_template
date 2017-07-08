@@ -1,11 +1,16 @@
 import React from 'react'
 
-import Link from 'utils/routes/helper'
+import { routes, Link } from 'utils/routes'
 
 export default class Page1 extends React.Component {
 
   render() {
-    <Link href='/hello'>My Text</Link>
+    return (
+      <div>
+        <h1>Page 1</h1>
+        <Link to={routes.root}>Home PAge</Link>
+      </div>
+    )
   }
 
 }
